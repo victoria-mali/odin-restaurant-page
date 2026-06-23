@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Goudy Bookletter 1911';
+    src: url('font/GoudyBookletter1911.woff2') format('woff2'),
+        url('font/GoudyBookletter1911.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.woff2') format('woff2'),
+        url('font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Goudy Bookletter 1911', Georgia, serif;
+}
+
+p, button {
+    font-family: 'Montserrat', Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*:not(dialog) {
+  margin: 0;
+}
+
+
+.container {
+    background-image: url("img/ruben-ramirez-xhKG01FN2uk-unsplash.jpg");
+    background-color: rgba(115, 64, 31, 0.6);;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo > img {
+    width: 150px;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 100px;
+}
+
+.buttons {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+#content > h1 {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+#content > p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#content > button {
+    font-size: 20px;
+    font-weight: 600;
+    color: #142A1E;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 40px;
+    background-color: #A9B58B;
+}
+
+#content > button:hover {
+    background-color: #8A9974;
+}
