@@ -59,15 +59,31 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    gap: 300px;
     align-items: center;
     padding: 12px 100px;
 }
-
+ 
 .buttons {
-    width: 400px;
     display: flex;
-    justify-content: space-between;
+    gap: 28px;
+}
+
+.btn-tab {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 12px 24px;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.btn-active {
+    background-color: #A9B58B;
+    color: #142A1E;
+    border: none;
 }
 
 #content {
@@ -100,4 +116,39 @@ nav {
 
 #content > button:hover {
     background-color: #8A9974;
+}
+
+.menu-container {
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    color: #142A1E;
+}
+
+.menu-section {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-section > h2 {
+    font-size: 40px;
+}
+
+.menu-item {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    font-size: 20px;
 }

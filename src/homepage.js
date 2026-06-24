@@ -11,7 +11,7 @@ const renderHomepage = function() {
 
     const btn = document.createElement("button");
     btn.classList.add("home-content");
-    btn.textContent = "Check our menu"
+    btn.textContent = "Check our menu";
 
     contentDiv.appendChild(h1);
     contentDiv.appendChild(p);

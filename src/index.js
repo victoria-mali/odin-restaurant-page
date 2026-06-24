@@ -28,17 +28,26 @@ function clearThePage() {
 }
 
 menuBtn.addEventListener("click", (e) => {
+    menuBtn.classList.add("btn-active");
+    homeBtn.classList.remove("btn-active");
+    aboutBtn.classList.remove("btn-active");
     clearThePage();
     renderMenu();
 })
 
 homeBtn.addEventListener("click", (e) => {
+    homeBtn.classList.add("btn-active");
+    menuBtn.classList.remove("btn-active");
+    aboutBtn.classList.remove("btn-active");
     clearThePage();
     renderHomepage();
 })
 
 
 aboutBtn.addEventListener("click", (e) => {
+    menuBtn.classList.remove("btn-active");
+    homeBtn.classList.remove("btn-active");
+    aboutBtn.classList.add("btn-active");
     clearThePage();
     renderAbout();
 })
