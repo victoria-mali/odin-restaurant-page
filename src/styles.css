@@ -27,6 +27,7 @@
 
 body {
     font-family: 'Goudy Bookletter 1911', Georgia, serif;
+    background-color: #fbe5bc;
 }
 
 p, button {
@@ -49,12 +50,9 @@ p, button {
     height: 100vh;
 }
 
+
 .logo > img {
     width: 150px;
-}
-
-header {
-    margin-bottom: 60px;
 }
 
 nav {
@@ -80,11 +78,17 @@ nav {
     background-color:rgba(0, 0, 0, 0);
 }
 
+.btn-tab-dark {
+    color: #142A1E;
+    border: 2px solid #142A1E;
+}
+
 .btn-active {
     background-color: #A9B58B;
     color: #142A1E;
     border: none;
 }
+
 
 #content {
     width: 1200px;
@@ -118,12 +122,21 @@ nav {
     background-color: #8A9974;
 }
 
+.home-title {
+    margin-top: 60px;
+}
+
+.menu-title {
+    color: #142A1E;
+}
+
 .menu-container {
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 251, 239);
+    border: 2px solid #142A1E;
     border-radius: 20px;
-    padding: 20px 40px;
+    padding: 40px;
     text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -151,4 +164,9 @@ nav {
 
 .item {
     font-size: 20px;
+}
+
+
+.about-title {
+    color: #142A1E;
 }

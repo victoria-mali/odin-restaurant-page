@@ -1,7 +1,10 @@
 const renderMenu = function() {
+    const container = document.getElementById("container");
+    container.classList.remove("container");
+    
     const contentDiv = document.querySelector("#content");
     const h1 = document.createElement("h1");
-    h1.classList.add("menu-content");
+    h1.classList.add("menu-title", "menu-content");
     h1.textContent = "Menu";
     contentDiv.appendChild(h1);
 
@@ -10,15 +13,21 @@ const renderMenu = function() {
     contentDiv.appendChild(menuContainer);
 
 
-    const coffeeSection = document.createElement("div");
-    coffeeSection.classList.add("menu-section", "menu-content");
-    menuContainer.appendChild(coffeeSection);
+    function createNewSection(title) {
+    const section = document.createElement("div");
+    section.classList.add("menu-section", "menu-content");
+    menuContainer.appendChild(section);
 
-    const coffeeSectionTitle = document.createElement("h2");
-    coffeeSectionTitle.classList.add("menu-content");
-    coffeeSectionTitle.textContent = "Coffee";
-    coffeeSection.appendChild(coffeeSectionTitle);
+    const sectionTitle = document.createElement("h2");
+    sectionTitle.classList.add("menu-content");
+    sectionTitle.textContent = title;
+    section.appendChild(sectionTitle);
+    return section;
+    }
 
+    const coffeeSection = createNewSection("Coffee");
+    const otherDrinksSection = createNewSection("Other");
+    const foodSection = createNewSection("Food");
 
     class MenuItem {
         constructor(name, price) {
@@ -54,6 +63,13 @@ const renderMenu = function() {
   createNewItem("Latte", "€ 3,50", coffeeSection);
   createNewItem("Filter", "€ 4,00", coffeeSection);
   createNewItem("Batch brew", "€ 3,00", coffeeSection);
+  createNewItem("Tea", "€ 2,50", otherDrinksSection);
+  createNewItem("Chai latte", "€ 3,50", otherDrinksSection);
+  createNewItem("Matcha latte", "€ 4,00", otherDrinksSection);
+  createNewItem("Croissant", "€ 3,00", foodSection);
+  createNewItem("Brownie", "€ 3.50", foodSection);
+  createNewItem("Cookie", "€ 2,50", foodSection);
+  createNewItem("Cinammon roll", "€ 3,50", foodSection);
 
 }
 
