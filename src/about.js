@@ -7,7 +7,7 @@ const renderAbout = function() {
 
     const h1 = document.createElement("h1");
     h1.classList.add("about-title", "about-content");
-    h1.textContent = "About";
+    h1.textContent = "About us";
     contentDiv.appendChild(h1);
 
 }

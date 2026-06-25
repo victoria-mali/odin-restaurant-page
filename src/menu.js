@@ -69,7 +69,7 @@ const renderMenu = function() {
   createNewItem("Croissant", "€ 3,00", foodSection);
   createNewItem("Brownie", "€ 3.50", foodSection);
   createNewItem("Cookie", "€ 2,50", foodSection);
-  createNewItem("Cinammon roll", "€ 3,50", foodSection);
+  createNewItem("Cinnamon roll", "€ 3,50", foodSection);
 
 }
 

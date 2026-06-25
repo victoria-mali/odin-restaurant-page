@@ -44,12 +44,15 @@ p, button {
 
 .container {
     background-image: url("img/ruben-ramirez-xhKG01FN2uk-unsplash.jpg");
-    background-color: rgba(115, 64, 31, 0.6);;
+    background-color: rgba(115, 64, 31, 0.7);;
     background-blend-mode: multiply;
     background-size: cover;
     height: 100vh;
 }
 
+.logo {
+    cursor: pointer;
+}
 
 .logo > img {
     width: 150px;
@@ -98,9 +101,8 @@ nav {
 }
 
 #content > h1 {
-    font-size: 70px;
+    font-size: 90px;
     line-height: 1;
-    margin-bottom: 20px;
 }
 #content > p {
     font-size: 24px;
@@ -124,10 +126,12 @@ nav {
 
 .home-title {
     margin-top: 60px;
+    margin-bottom: 18px;
 }
 
 .menu-title {
     color: #142A1E;
+    margin-bottom: 40px;
 }
 
 .menu-container {
@@ -169,4 +173,5 @@ nav {
 
 .about-title {
     color: #142A1E;
+    margin-bottom: 28px;
 }

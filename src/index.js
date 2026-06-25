@@ -7,6 +7,7 @@ import { renderAbout } from "./about.js";
 const homeBtn = document.querySelector(".home-btn");
 const menuBtn = document.querySelector(".menu-btn");
 const aboutBtn = document.querySelector(".about-btn");
+const logo = document.querySelector(".logo");
 
 
 function clearThePage() {
@@ -41,6 +42,12 @@ homeBtn.addEventListener("click", (e) => {
     aboutBtn.classList.remove("btn-active", "btn-tab-dark");
     clearThePage();
     renderHomepage();
+
+    const homeMenuBtn = document.querySelector(".home-menu-btn");
+
+    homeMenuBtn.addEventListener("click", (e) => {
+    menuBtn.click();
+})
 })
 
 
@@ -54,4 +61,9 @@ aboutBtn.addEventListener("click", (e) => {
     renderAbout();
 })
 
+logo.addEventListener("click", (e) => {
+    homeBtn.click();
+})
+
 homeBtn.click();
+
