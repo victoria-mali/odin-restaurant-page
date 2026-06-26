@@ -1,3 +1,5 @@
+import coffeeMachine from "./img/coffee-machine.svg";
+
 const renderMenu = function() {
     const container = document.getElementById("container");
     container.classList.remove("container");
@@ -5,7 +7,7 @@ const renderMenu = function() {
     const contentDiv = document.querySelector("#content");
     const h2 = document.createElement("h2");
     h2.classList.add("menu-title", "menu-content");
-    h2.textContent = "Menu";
+    h2.textContent = "Our menu";
     contentDiv.appendChild(h2);
 
     const para = document.createElement("p");
@@ -33,6 +35,12 @@ const renderMenu = function() {
     const coffeeSection = createNewSection("Coffee");
     const otherDrinksSection = createNewSection("Other drinks");
     const foodSection = createNewSection("Food");
+
+    const coffeeImg = document.createElement("img");
+    coffeeImg.classList.add("menu-img");
+    coffeeImg.src = coffeeMachine;
+    coffeeImg.alt = "A line art graphic of a coffee machine";
+    menuContainer.appendChild(coffeeImg);
 
     class MenuItem {
         constructor(name, price) {
@@ -75,6 +83,7 @@ const renderMenu = function() {
   createNewItem("Brownie", "€ 3.50", foodSection);
   createNewItem("Cookie", "€ 2,50", foodSection);
   createNewItem("Cinnamon roll", "€ 3,50", foodSection);
+
 
 }
 

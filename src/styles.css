@@ -138,7 +138,7 @@ nav {
 .menu-para {
     color: #142A1E;
     font-size: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .menu-container {
@@ -148,6 +148,7 @@ nav {
     border: 2px solid #142A1E;
     border-radius: 20px;
     padding: 40px;
+    margin-bottom: 60px;
     text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -175,6 +176,11 @@ nav {
 
 .item {
     font-size: 20px;
+}
+
+.menu-img {
+    width: 180px;
+    justify-self: center;
 }
 
 
