@@ -7,7 +7,8 @@ import { renderAbout } from "./about.js";
 const homeBtn = document.querySelector(".home-btn");
 const menuBtn = document.querySelector(".menu-btn");
 const aboutBtn = document.querySelector(".about-btn");
-const logo = document.querySelector(".logo");
+const logoLight = document.querySelector(".logo-light");
+const logoDark = document.querySelector(".logo-dark");
 
 
 function clearThePage() {
@@ -33,6 +34,8 @@ menuBtn.addEventListener("click", (e) => {
     homeBtn.classList.add("btn-tab-dark");
     aboutBtn.classList.add("btn-tab-dark");
     clearThePage();
+    logoLight.style.display = "none";
+    logoDark.style.display = "block";
     renderMenu();
 })
 
@@ -41,6 +44,8 @@ homeBtn.addEventListener("click", (e) => {
     menuBtn.classList.remove("btn-active", "btn-tab-dark");
     aboutBtn.classList.remove("btn-active", "btn-tab-dark");
     clearThePage();
+    logoLight.style.display = "block";
+    logoDark.style.display = "none";
     renderHomepage();
 
     const homeMenuBtn = document.querySelector(".home-menu-btn");
@@ -58,10 +63,15 @@ aboutBtn.addEventListener("click", (e) => {
     homeBtn.classList.add("btn-tab-dark");
     menuBtn.classList.add("btn-tab-dark");
     clearThePage();
+    logoLight.style.display = "none";
+    logoDark.style.display = "block";
     renderAbout();
 })
 
-logo.addEventListener("click", (e) => {
+logoLight.addEventListener("click", (e) => {
+    homeBtn.click();
+})
+logoDark.addEventListener("click", (e) => {
     homeBtn.click();
 })
 

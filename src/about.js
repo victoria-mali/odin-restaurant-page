@@ -5,10 +5,10 @@ const renderAbout = function() {
     const contentDiv = document.querySelector("#content");
 
 
-    const h1 = document.createElement("h1");
-    h1.classList.add("about-title", "about-content");
-    h1.textContent = "About us";
-    contentDiv.appendChild(h1);
+    const h2 = document.createElement("h1");
+    h2.classList.add("about-title", "about-content");
+    h2.textContent = "About us";
+    contentDiv.appendChild(h2);
 
 }
 

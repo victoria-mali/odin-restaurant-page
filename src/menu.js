@@ -3,10 +3,15 @@ const renderMenu = function() {
     container.classList.remove("container");
     
     const contentDiv = document.querySelector("#content");
-    const h1 = document.createElement("h1");
-    h1.classList.add("menu-title", "menu-content");
-    h1.textContent = "Menu";
-    contentDiv.appendChild(h1);
+    const h2 = document.createElement("h2");
+    h2.classList.add("menu-title", "menu-content");
+    h2.textContent = "Menu";
+    contentDiv.appendChild(h2);
+
+    const para = document.createElement("p");
+    para.classList.add("menu-para", "menu-content");
+    para.textContent = "Everything that you know and love, and more";
+    contentDiv.appendChild(para);
 
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container", "menu-content");
@@ -26,7 +31,7 @@ const renderMenu = function() {
     }
 
     const coffeeSection = createNewSection("Coffee");
-    const otherDrinksSection = createNewSection("Other");
+    const otherDrinksSection = createNewSection("Other drinks");
     const foodSection = createNewSection("Food");
 
     class MenuItem {

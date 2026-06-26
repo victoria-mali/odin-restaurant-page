@@ -9,7 +9,7 @@ const renderHomepage = function() {
     h1.innerHTML = "Coffee and pastry.<br>Everything that you need."
 
     const p = document.createElement("p");
-    p.classList.add("home-content");
+    p.classList.add("home-para", "home-content");
     p.textContent = "Each sip is a journey through time";
 
     const btn = document.createElement("button");

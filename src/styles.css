@@ -104,7 +104,7 @@ nav {
     font-size: 90px;
     line-height: 1;
 }
-#content > p {
+.home-para {
     font-size: 24px;
     margin-bottom: 40px;
 }
@@ -131,7 +131,14 @@ nav {
 
 .menu-title {
     color: #142A1E;
-    margin-bottom: 40px;
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.menu-para {
+    color: #142A1E;
+    font-size: 18px;
+    margin-bottom: 24px;
 }
 
 .menu-container {
